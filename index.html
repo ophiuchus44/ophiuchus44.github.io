@@ -1,37 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-}
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  transform: translateX(calc((100% - 100vw) / 2));
+    body {
+      margin: 0;
+      font-family: Arial;
+      font-size: 17px;
+      overflow: hidden; /* Prevents scrolling */
+    }
 
-}
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+      transform: translateX(calc((100% - 100vw) / 2));
+    }
 
-</style>
+    #inputField {
+      position: absolute;
+      top: 20px; /* Adjust the top position as needed */
+      left: 20px; /* Adjust the left position as needed */
+      z-index: 1; /* Places it above the video */
+    }
+
+    #submitButton {
+      position: absolute;
+      top: 20px; /* Adjust the top position as needed */
+      left: calc(20px + 155px); /* Adjust the left position as needed */
+      z-index: 1; /* Places it above the video */
+    }
+
+    #thankYouMessage {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      color: white;
+      font-weight: bold;
+      display: none; /* Initially hidden */
+      z-index: 1; /* Places it above the video */
+    }
+  </style>
 </head>
 <body>
 
+  <input type="text" id="inputField" placeholder="Email">
+  <button id="submitButton">Submit</button>
 
+  <video playsinline autoplay muted loop id="myVideo">
+    <source src="smallvid.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
 
-<video playsinline autoplay muted loop id="myVideo">
-  <source src="smallvid.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+  <div id="thankYouMessage"></div>
+
+  <script>
+    document.getElementById('submitButton').addEventListener('click', function() {
+      var inputValue = document.getElementById('inputField').value;
+      console.log('Input Value:', inputValue);
+
+      // Hide input field and submit button
+      document.getElementById('inputField').style.display = 'none';
+      document.getElementById('submitButton').style.display = 'none';
+
+      // Show thank you message
+      var thankYouMessage = document.getElementById('thankYouMessage');
+      thankYouMessage.innerHTML = 'Thank you, ' + inputValue + '. Your search starts soon.';
+      thankYouMessage.style.display = 'block';
+    });
+  </script>
 
 </body>
 </html>
