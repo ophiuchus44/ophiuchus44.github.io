@@ -1,4 +1,103 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Supabase Integration</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial;
+      font-size: 17px;
+      overflow: hidden; /* Prevents scrolling */
+    }
+
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translateX(calc((100% - 100vw) / 2));
+    }
+
+    #inputField {
+      position: absolute;
+      top: 20px; /* Adjust the top position as needed */
+      left: 20px; /* Adjust the left position as needed */
+      z-index: 1; /* Places it above the video */
+    }
+
+    #submitButton {
+      position: absolute;
+      top: 20px; /* Adjust the top position as needed */
+      left: calc(20px + 155px); /* Adjust the left position as needed */
+      z-index: 1; /* Places it above the video */
+    }
+
+    #thankYouMessage {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      color: white;
+      font-weight: bold;
+      display: none; /* Initially hidden */
+      z-index: 1; /* Places it above the video */
+    }
+  </style>
+</head>
+<body>
+
+<input type="text" id="inputField" placeholder="Email">
+<button id="submitButton">Submit</button>
+
+<video playsinline autoplay muted loop id="myVideo">
+  <source src="smallvid.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div id="thankYouMessage"></div>
+
+<script>
+  document.getElementById('submitButton').addEventListener('click', function () {
+    var inputValue = document.getElementById('inputField').value;
+    console.log('Input Value:', inputValue);
+
+    // Hide input field and submit button
+    document.getElementById('inputField').style.display = 'none';
+    document.getElementById('submitButton').style.display = 'none';
+
+    // Show thank you message
+    var thankYouMessage = document.getElementById('thankYouMessage');
+    thankYouMessage.innerHTML = 'Thank you, ' + inputValue + '. Your search starts soon.';
+    thankYouMessage.style.display = 'block';
+
+    // Send data to Supabase
+    fetch('https://ievwjboxmfftlkeeuqbp.supabase.co/rest/v1/premails', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlldndqYm94bWZmdGxrZWV1cWJwIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTU3NTAwMDgsImV4cCI6MjAxMTMyNjAwOH0.yCXRAc7McxhgDtAmsRRw8-Wwv8x3R6cPtnGpK10_LHg'
+      },
+      body: JSON.stringify({
+        email: inputValue
+      })
+    })
+      .then(response => response.json())
+      .then(data => console.log('Data sent to Supabase:', data))
+      .catch(error => console.error('Error sending data to Supabase:', error));
+  });
+</script>
+
+</body>
+</html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -79,4 +178,4 @@
   </script>
 
 </body>
-</html>
+</html> -->
