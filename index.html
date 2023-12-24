@@ -63,8 +63,25 @@
           <div>
             <h1>Stop swiping, Start searching!</h1>
             <h2>A new dating app experience! Download today on Android or IOS!</h2>
-            <a href="#" class="download-btn"><i class="bx bxl-play-store"></i> Google Play</a>
-            <a href="#" class="download-btn"><i class="bx bxl-apple"></i> App Store</a>
+            <a href="#" class="download-btn" onmouseover="showModal('googleModal')" onmouseout="hideModal('googleModal')"><i class="bx bxl-play-store" ></i> Google Play</a>
+            <a href="#" class="download-btn" onmouseover="showModal('googleModal')" onmouseout="hideModal('googleModal')"><i class="bx bxl-apple"></i> App Store</a>
+
+             
+            <div id="googleModal" style="display: none;" >
+                <p>Coming soon!</p>
+              </div>
+
+              <script>
+                function showModal(modalId) {
+                    var modal = document.getElementById(modalId);
+                    modal.style.display = 'block';
+                }
+            
+                function hideModal(modalId) {
+                    var modal = document.getElementById(modalId);
+                    modal.style.display = 'none';
+                }
+            </script>
           </div>
         </div>
         <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
@@ -92,17 +109,16 @@
           <div class="col-md-8 pt-4" data-aos="fade-up">
             <h3>Public Profile</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Your public facing profile can NOT include what you look like! 
             </p>
             <ul>
-              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check"></i> Iure at voluptas aspernatur dignissimos doloribus repudiandae.</li>
-              <li><i class="bi bi-check"></i> Est ipsa assumenda id facilis nesciunt placeat sed doloribus praesentium.</li>
+              <li><i class="bi bi-check"></i> Better conversation starters</li>
+              <li><i class="bi bi-check"></i> More matches</li>
+              <li><i class="bi bi-check"></i> Another thing</li>
+              
             </ul>
             <p>
-              Voluptas nisi in quia excepturi nihil voluptas nam et ut. Expedita omnis eum consequatur non. Sed in asperiores aut repellendus. Error quisquam ab maiores. Quibusdam sit in officia
+              Showcase thing like your bookshelf, the car you're restoring or that place you went on a hike!
             </p>
           </div>
         </div>
@@ -115,13 +131,10 @@
           <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
             <h3>Private Profile </h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Several messages must be exchanged in order to grant permission to your private profile.
             </p>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+              We challenge the idea that looks is all that matter, but we aren't going to deny you.
             </p>
             <p>
               Inventore id enim dolor dicta qui et magni molestiae. Mollitia optio officia illum ut cupiditate eos autem. Soluta dolorum repellendus repellat amet autem rerum illum in. Quibusdam occaecati est nisi esse. Saepe aut dignissimos distinctio id enim.
@@ -136,11 +149,11 @@
           </div>
           <div class="col-md-8 pt-5" data-aos="fade-up">
             <h3>Stop swiping, start searching!</h3>
-            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+            <p>Instead of scrolling one profile at a time, we bring you endless search results!</p>
             <ul>
-              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+              <li><i class="bi bi-check"></i> Search for things you are interested in</li>
+              <li><i class="bi bi-check"></i> Filter out other things</li>
+              <li><i class="bi bi-check"></i> Another thing</li>
             </ul>
             <p>
               Qui consequatur temporibus. Enim et corporis sit sunt harum praesentium suscipit ut voluptatem. Et nihil magni debitis consequatur est.
