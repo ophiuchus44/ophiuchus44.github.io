@@ -30,11 +30,20 @@
   <!-- for lottie files -->
 
   <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  <script>
+    function redirectToAndroid() {
+        window.location.href = 'https://play.google.com/store/apps/details?id=com.hashingz.yougee&gl=us';
+    }
 
+    function redirectToiOS() {
+        window.location.href = 'https://apps.apple.com/us/app/yougee/id6476447891';
+    }
+</script>
 </head>
 
+
 <body>
-<!-- ARE YOU INTERESTED IN JOINING OUR TEAM? EMAIL WILLOW@YOUGEE.COM AND IN THE SUBJECT LINE PUT 'FOUND WALDO' -->
+<!-- ARE YOU INTERESTED IN JOINING OUR TEAM? EMAIL WILLOW@yougee.COM AND IN THE SUBJECT LINE PUT 'FOUND WALDO' -->
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top  header-transparent ">
     
@@ -48,7 +57,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <!-- <li><a class="nav-link scrollto" href="#features">App Features</a></li> -->
           <li><a class="nav-link scrollto" href="#faq">F.A.Q</a></li>
-          <li><a class="getstarted scrollto" href="#footer">BETA TESTERS</a></li>
+          <li><a class="getstarted scrollto" href="#footer">DOWNLOAD NOW!</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -82,27 +91,23 @@
       <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-1 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
         <div>
           <h1>Stop <i>Swiping</i>,</br> Start <b>Searching!</b></h1>
-          <h2>Discover genuine connections with <b>Yougee</b>: a totally new
+          <h2>Discover genuine connections with <b>yougee</b>: a totally new
           dating app experience! 💜<br></h2>
-            <h2>Coming soon to Android and IOS!</h2>
-          <a  class="download-btn" onclick="showModal('googleModal')"><i class="bx bxl-play-store" ></i> Google Play</a>
-          <a  class="download-btn" onclick="showModal('googleModal')"><i class="bx bxl-apple"></i> App Store</a>
+            <h2>Now available on Android and IOS!</h2>
+          <a  class="download-btn" onclick="redirectToAndroid()"><i class="bx bxl-play-store" ></i> Google Play</a>
+          <a  class="download-btn" onclick="redirectToiOS()"><i class="bx bxl-apple"></i> App Store</a>
            
-          <div id="googleModal" style="display: none;" >
-              <p>Coming soon!</p>
-            </div>
+   
 
-            <script>
-              function showModal(modalId) {
-                  var modal = document.getElementById(modalId);
-                  modal.style.display = 'block';
+            <!-- <script>
+              function redirectToAndroid() {
+                  window.location.href = 'https://play.google.com/store/apps/details?id=com.hashingz.yougee&gl=us';
               }
-          
-              function hideModal(modalId) {
-                  var modal = document.getElementById(modalId);
-                  modal.style.display = 'none';
+
+              function redirectToiOS() {
+                  window.location.href = 'https://apps.apple.com/us/app/yougee/id6476447891';
               }
-          </script>
+          </script> -->
         </div>
       </div>
       <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
@@ -233,10 +238,10 @@
               "bx bx-chevron-up icon-close"></i></a>
               <div id="accordion-list-1" class="collapse" data-bs-parent=
               ".accordion-list">
-                <p>Yougee's AI analyzes text and media content to infer
+                <p>yougee's AI analyzes text and media content to infer
                 similarities between users based on shared interests, ensuring
                 connections are built on meaningful common ground. Additionally,
-                Yougee's AI is used to automatically detect and remove images
+                yougee's AI is used to automatically detect and remove images
                 containing unsafe or abusive content.</p>
               </div>
             </li>
@@ -249,7 +254,7 @@
               "bx bx-chevron-up icon-close"></i></a>
               <div id="accordion-list-2" class="collapse" data-bs-parent=
               ".accordion-list">
-                <p>No worries! Yougee eliminates the fear of judgment, providing a
+                <p>No worries! yougee eliminates the fear of judgment, providing a
                 fresh start with every connection, free from the influence of
                 downranking or Elo systems. Your past will not determine your
                 future.</p>
@@ -258,7 +263,7 @@
             <li data-aos="fade-up" data-aos-delay="200">
               <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle=
               "collapse" data-bs-target="#accordion-list-3" class=
-              "collapsed"> How do the two profiles work, and why does Yougee have this feature? <i class=
+              "collapsed"> How do the two profiles work, and why does yougee have this feature? <i class=
               "bx bx-chevron-down icon-show"></i><i class=
               "bx bx-chevron-up icon-close"></i></a>
               <div id="accordion-list-3" class="collapse" data-bs-parent=
@@ -279,12 +284,12 @@
             <li data-aos="fade-up" data-aos-delay="300">
               <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle=
               "collapse" data-bs-target="#accordion-list-4" class=
-              "collapsed">  What are the benefits of upgrading to Yougee Premium?<i class=
+              "collapsed">  What are the benefits of upgrading to yougee Premium?<i class=
               "bx bx-chevron-down icon-show"></i><i class=
               "bx bx-chevron-up icon-close"></i></a>
               <div id="accordion-list-4" class="collapse" data-bs-parent=
               ".accordion-list">
-                <p>Yougee doesn't stop at redefining how you connect; we take it a
+                <p>yougee doesn't stop at redefining how you connect; we take it a
                 step further with premium features. Enjoy a multitude of additional
                 search filters to refine your matches, giving you ultimate control
                 over your dating experience. You'll also have message read receipts
@@ -307,23 +312,67 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
     <div class="footer-newsletter">
-      
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Want to beta test Yougee? </h4>
-            <p>Testing is currently being done through Apple TestFlight. Email us at
-              <a href=mailto:"willow@yougee.com">willow@yougee.com</a> 💜</p>
+
+      <h4>Want to beta test yougee? </h4>
+      <p>Testing is currently being done through Apple TestFlight. Email us at
+        <a href=mailto:"willow@yougee.com">willow@yougee.com</a> 💜</p>
+        <a  class="download-btn2" onclick="redirectToAndroid()"><i class="bx bxl-play-store" ></i> Google Play</a>
+            <a  class="download-btn2" onclick="redirectToiOS()"><i class="bx bxl-apple"></i> App Store</a>
+
+      <div class="d-flex align-items-center ">
+
+            <!-- <div class="download-container"> -->
+              <div class="row">
+                <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-1 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
+            <!-- <a  class="download-btn2" onclick="redirectToAndroid()"><i class="bx bxl-play-store" ></i> Google Play</a>
+            <a  class="download-btn2" onclick="redirectToiOS()"><i class="bx bxl-apple"></i> App Store</a> -->
 
           </div>
+
+          <style>
+            .download-container {
+              display: flex;
+              /* justify-content: center;
+              align-items: center; */
+            }
+        
+            .download-btn2 {
+              display: inline-block;
+              width: 200px;
+              height: 60px;
+              margin: 0 10px;
+              background-color: #47536e;
+              color: #fff;
+              text-align: center;
+              line-height: 60px;
+              text-decoration: none;
+              font-size: 16px;
+              border-radius: 5px;
+            }
+            .download-btn2:hover {
+    background-color: #7700cb; /* Maintain the same background color on hover */
+    color: #fff; /* Ensure text color remains white on hover */
+  }
+            .download-btn2 i {
+              margin-right: 10px;
+            }
+        
+            .android-logo {
+              color: green;
+            }
+        
+            .ios-logo {
+              color: #000;
+            }
+          </style>
 
        
 
               
-        </div>
+        <!-- </div> -->
       </div>
+    </div>
 
     </div>
 
@@ -366,7 +415,7 @@
 
     <!-- <div class="container py-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Yougee</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>yougee</span></strong>. All Rights Reserved
       </div>
       <div class="social-links mt-3">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
