@@ -1,454 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>yougee</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- for lottie files -->
-
-  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-  <script>
-    function redirectToAndroid() {
-        window.location.href = 'https://play.google.com/store/apps/details?id=com.hashingz.yougee&gl=us';
+  <title>Paul's Digital Lab</title>
+  <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: "Courier New", monospace;
+      text-align: center;
     }
-
-    function redirectToiOS() {
-        window.location.href = 'https://apps.apple.com/us/app/yougee/id6476447891';
+    .project {
+      border: 2px dashed magenta;
+      margin: 30px auto;
+      padding: 15px;
+      width: 85%;
     }
-</script>
+    h1 {
+      color: yellow;
+    }
+    h2 {
+      color: cyan;
+    }
+    a {
+      color: orange;
+      text-decoration: none;
+    }
+    .gif {
+      max-width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: contain;
+      margin-top: 10px;
+    }
+    .project iframe {
+      max-width: 100%;
+      height: auto;
+      max-height: 400px;
+      margin-top: 10px;
+    }
+  </style>
+  <!-- <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: "Courier New", monospace;
+      text-align: center;
+    }
+    .project {
+      border: 2px dashed magenta;
+      margin: 30px auto;
+      padding: 15px;
+      width: 85%;
+    }
+    h1 {
+      color: yellow;
+    }
+    h2 {
+      color: cyan;
+    }
+    a {
+      color: orange;
+      text-decoration: none;
+    }
+    .gif {
+      max-width: 90%;
+      height: auto;
+    }
+  </style> -->
 </head>
-
-
 <body>
-<!-- ARE YOU INTERESTED IN JOINING OUR TEAM? EMAIL WILLOW@yougee.COM AND IN THE SUBJECT LINE PUT 'FOUND WALDO' -->
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top  header-transparent ">
-    
-    <div class="container d-flex align-items-center justify-content-between">
-      <div class="logo">
-        <a href="#"><img src="assets/img/logo/logo.png" alt="" class="img-fluid"></a>
-      </div>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#features">App Features</a></li> -->
-          <li><a class="nav-link scrollto" href="#faq">F.A.Q</a></li>
-          <li><a class="getstarted scrollto" href="#footer">DOWNLOAD NOW!</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+<marquee behavior="scroll" direction="left" scrollamount="5">🚀 Welcome to Paul's Digital Lab – Best Viewed in Netscape Navigator 🚀</marquee>
 
-    </div>
-  </header><!-- End Header -->
+<h1>Hi, I'm Paul 👋</h1>
+<p>These are a few projects I've built over the years — just some public examples. There's more.</p>
 
-  <!-- Add these styles to the head section -->
-<style>
-  .dotlottie-player-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
+<p>
+    <a href="https://www.linkedin.com/in/paultrichon" target="_blank" style="color: cyan;">💼 LinkedIn</a> |
+    <a href="https://github.com/ophiuchus44/publicExamples" target="_blank" style="color: cyan;">💻 GitHub</a>
+    <a href="mailto:paul.trichon@gmail.com" style="color: cyan;">📧 Email</a>
+  </p>
 
-  .dotlottie-player {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-  }
-</style>
+<div class="project">
+  <h2>👐 Hand Warm-ups (2025)</h2>
+  <p>Using computer vision to track finger-to-thumb warm-up gestures.</p>
+  <img class="gif" src="https://github.com/user-attachments/assets/25b2788b-1460-4fe7-862c-eee629315557">
+</div>
 
-<!-- ... Your existing HTML ... -->
+<div class="project">
+  <h2>🏃 Running Man – Arm Swing Tracker (2025)</h2>
+  <p>Tracks arm motion and gives feedback on running form.</p>
+  <img class="gif" src="https://github.com/user-attachments/assets/112e793e-55f2-4a06-b8fb-8f76f9e8895f">
+</div>
 
-<!-- Example of usage in the hero section -->
-<section id="hero" class="d-flex align-items-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-1 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
-        <div>
-          <h1>Stop <i>Swiping</i>,</br> Start <b>Searching!</b></h1>
-          <h2>Discover genuine connections with <b>yougee</b>: a totally new
-          dating app experience! 💜<br></h2>
-            <h2>Now available on Android and IOS!</h2>
-          <a  class="download-btn" onclick="redirectToAndroid()"><i class="bx bxl-play-store" ></i> Google Play</a>
-          <a  class="download-btn" onclick="redirectToiOS()"><i class="bx bxl-apple"></i> App Store</a>
-           
-   
-
-            <!-- <script>
-              function redirectToAndroid() {
-                  window.location.href = 'https://play.google.com/store/apps/details?id=com.hashingz.yougee&gl=us';
-              }
-
-              function redirectToiOS() {
-                  window.location.href = 'https://apps.apple.com/us/app/yougee/id6476447891';
-              }
-          </script> -->
-        </div>
-      </div>
-      <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
-        <div class="dotlottie-player-container">
-          <dotlottie-player src="https://lottie.host/83189694-0d01-4ec5-962d-989064d2c2b5/vMGnFJTfLh.json" background="transparent" speed="1" style="width: 400px; height: 400px" direction="1" mode="normal" loop autoplay class="mx-auto"></dotlottie-player>
-        </div>
-      </div>
-    </div>
+<div class="project">
+    <h2>💬 YouGee – Dating App (2024)</h2>
+    <p>A dating app where users could search for things they are interested in, like hiking or cooking. Focused on intentional connection and aesthetics over gamification.</p>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/EsYnpAHfjNM"
+      frameborder="0"
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
   </div>
-</section>
 
 
-  <main id="main">
+<div class="project">
+  <h2>🎮 Gameboy Tetris – Kotlin/Compose (2023)</h2>
+  <p>Gameboy emulator UI with Tetris built using Jetpack Compose.</p>
+  <img class="gif" src="https://user-images.githubusercontent.com/17733702/217046867-97218a15-d7f9-4e5c-9ad8-0fd0d307c4d3.gif">
+</div>
 
-    
+<div class="project">
+  <h2>🧽 A* Pathfinding Visualizer (2023)</h2>
+  <p>Short video demos of an interactive pathfinding project.</p>
+  <img class="gif" src="https://github.com/user-attachments/assets/51117674-4df7-42c9-9185-5f54c2f11ac3">
+  <img class="gif" src="https://github.com/user-attachments/assets/c258a05c-a6bb-4fcc-8075-8cdfa4a0d052">
+</div>
 
-    <!-- ======= Details Section ======= -->
-    <section id="details" class="details">
-      <div class="container">
+<div class="project">
+  <h2>🏋 Game of Thrones – UI/UX Concept (2022)</h2>
+  <p>Concept interface and interactions using Kotlin/Compose.</p>
+  <img class="gif" src="https://user-images.githubusercontent.com/17733702/217055877-0a7788ee-87a4-41e3-acf9-ffefb9e04751.gif">
+</div>
 
+<div class="project">
+  <h2>🧹 Game Level Editor – Kotlin/Compose (2021)</h2>
+  <p>Tile-based level builder with real-time interaction.</p>
+  <img class="gif" src="https://user-images.githubusercontent.com/17733702/218213834-40b2a597-54b0-4f31-9baa-8c727f7bf0c8.gif">
+</div>
 
-        <div class="row content">
-          <div class="col-md-4" data-aos="fade-right">
-            <!-- <img src="assets/img/details-3.png" class="img-fluid" alt=""> -->
-            <dotlottie-player class="img-fluid" src="https://lottie.host/afad264c-8382-4988-8d7e-a5a35b8031d1/kaR6abVRmj.json" background="transparent" speed="1" style="width: 400px; height: 400px" direction="1" mode="normal" loop autoplay class="mx-auto"></dotlottie-player>
-          </div>
-          <div class="col-md-7 pt-5" data-aos="fade-up">
-            <h3><i class="bi bi-search-heart"></i> Next-Level Match Search</h3>
-            <p class="fst-italic"><i class="bi bi-rocket"></i> Escape "the
-            algo" with an elevated AI-enhanced search experience!</p>
-            <ul>
-              <li><span><i class="bi bi-check"></i></span> No more swiping
-              fatigue! Query our state-of-the-art AI, which delves into your
-              interests for thoughtful matches.</li>
-              <li><span><i class="bi bi-check"></i></span> Forget mysterious
-              algorithms; our AI understands you through text and media to
-              provide you with more authentic connections.</li>
-              <li><span><i class="bi bi-check"></i></span> Bid farewell to
-              algorithmic downranking – you'll always have a fresh, unbiased
-              start. You can finally just be yourself!</li>
-            </ul>
-            <!-- <p>
-                 </p> -->
+<div class="project">
+  <h2>🌍 WIKI App – Kotlin/Compose/Hilt/Ktor (2020)</h2>
+  <p>Fetches local data from GPS and APIs for contextual info.</p>
+  <img class="gif" src="https://user-images.githubusercontent.com/17733702/217066635-e0d2d287-9303-4dd4-9f3b-ac1710e84f0e.gif">
+</div>
 
-          </div>
-        </div>
-        
-
-        <div class="row content">
-          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
-            
-            <dotlottie-player class="img-fluid" src="https://lottie.host/ca4dfb51-0e6d-4cb1-9cdb-2be38a2d1e61/HipLFICPu7.json" background="transparent" speed="1" style="width: 400px; height: 400px" direction="1" mode="normal" loop autoplay class="mx-auto"></dotlottie-player>
-          </div>
-          <div class="col-md-7 pt-5 order-1 order-md-1" data-aos="fade-up">
-            <h3><i class="bi bi-transparency"></i> Two Profiles, One Connection </h3>
-            <p class="fst-italic">
-              <i class="bi bi-palette"></i> Connect beyond appearances by showing
-              your interests and values – before your face!
-            </p>
-            <ul>
-              <li><span><i class="bi bi-file-image"></i></span> <u>Public
-              Profile</u>: Mystery is magnetic – express yourself without
-              revealing your face. Showcase your hobbies and passions: your
-              bookshelf, the car you're restoring, or where you last went on a
-              hike – let your personality shine!</li>
-              <li><span><i class="bi bi-file-person"></i></span> <u>Private
-              Profile</u>: Your true self – face and all! This profile may only
-              be unveiled to a potential match after building mutual rapport
-              through meaningful conversation.</li>
-            </ul>
-            <!-- <p>
-                 </p> -->
-            
-          </div>
-        </div>
+<div class="project">
+    <h2>🪐 Interstellar – Dating App (2019)</h2>
+    <p>Focused on intentional connection and aesthetics over gamification.</p>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/YqgHC03DUnc"
+      frameborder="0"
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
 
 
-        <div class="row content">
-          <div class="col-md-4" data-aos="fade-right">
-            <dotlottie-player class="img-fluid" src="https://lottie.host/8f0da924-bd72-443f-ae2f-bffe4b8399c2/qMtjdOBzLn.json" background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" loop autoplay class="mx-auto"></dotlottie-player>
-          </div>
-          <div class="col-md-7 pt-5" data-aos="fade-up">
-            <h3><i class="bi bi-hearts"></i> Match With Meaning, Your Way</h3>
-            <!-- <p class="fst-italic">
-                 </p> -->
-            <ul>
-              <li><span><i class="bi bi-chat-heart"></i></span> <u>Messaging
-              Ease</u>: Break the ice, or turn sparks into flames – start conversations
-              effortlessly, paving the way for true love!</li>
-              <li><span><i class="bi bi-toggles"></i></span> <u>Filters and
-              Preferences</u>: You're in control – tailor your search for matches
-              that align with your values. Decide your dealbreakers!</li>
-              <li><span><i class="bi bi-bag-heart"></i></span> <u>Premium
-              Features</u>: Because your love story deserves VIP treatment –
-              enjoy additional search filters and message read receipts for an
-              enriched experience. You'll be able to see your secret admirers
-              too!</li>
-            </ul>
-            <!-- <p>
-                 </p> -->
-          </div>
-        </div>
-        
+<div class="project">
+  <h2>📺 DirectTV Automated Testing (2017)</h2>
+  <p>Scripting and automation to simulate remote control inputs.</p>
+  <img class="gif" src="https://github.com/user-attachments/assets/68b7d41a-99c8-4e7d-a384-18a84e716cbd">
+</div>
 
-      </div>
-    </section><!-- End Details Section -->
+<div class="project">
+  <h2>🌿 mmjprice.com (2016)</h2>
+  <p>Early-stage web app for MMJ pricing aggregation.</p>
+  <img class="gif" src="https://github.com/user-attachments/assets/3fcfbb6c-b6ce-4762-ad09-20b05ca710ea">
+</div>
 
 
-
-
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-
-          <h2>Frequently Asked Questions</h2>
-          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
-        </div>
-
-        <div class="accordion-list">
-          <ul>
-            <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle=
-              "collapse" class="collapse" data-bs-target=
-              "#accordion-list-1">How is AI used in this app?<i class=
-              "bx bx-chevron-down icon-show"></i><i class=
-              "bx bx-chevron-up icon-close"></i></a>
-              <div id="accordion-list-1" class="collapse" data-bs-parent=
-              ".accordion-list">
-                <p>yougee's AI analyzes text and media content to infer
-                similarities between users based on shared interests, ensuring
-                connections are built on meaningful common ground. Additionally,
-                yougee's AI is used to automatically detect and remove images
-                containing unsafe or abusive content.</p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle=
-              "collapse" data-bs-target="#accordion-list-2" class=
-              "collapsed">  Will I be downranked or judged by an algorithm based on my past interactions?<i class=
-              "bx bx-chevron-down icon-show"></i><i class=
-              "bx bx-chevron-up icon-close"></i></a>
-              <div id="accordion-list-2" class="collapse" data-bs-parent=
-              ".accordion-list">
-                <p>No worries! yougee eliminates the fear of judgment, providing a
-                fresh start with every connection, free from the influence of
-                downranking or Elo systems. Your past will not determine your
-                future.</p>
-              </div>
-            </li>
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle=
-              "collapse" data-bs-target="#accordion-list-3" class=
-              "collapsed"> How do the two profiles work, and why does yougee have this feature? <i class=
-              "bx bx-chevron-down icon-show"></i><i class=
-              "bx bx-chevron-up icon-close"></i></a>
-              <div id="accordion-list-3" class="collapse" data-bs-parent=
-              ".accordion-list">
-                <p>Users have a "public profile", which cannot contain pictures of
-                their face, and a "private profile", which must contain pictures of
-                their face. Access to private profiles is a mutual decision made
-                after establishing a conversation: once you've exchanged five
-                messages with someone, and vice versa, a <i>'Let's meet'</i> button
-                will appear. If both you and your potential match click that
-                button, you will both gain access to each other's private profiles.
-                This consensual approach ensures that privacy is respected, and
-                connections are built on more than just physical attraction.</p>
-              </div>
-            </li>
-
-
-            <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle=
-              "collapse" data-bs-target="#accordion-list-4" class=
-              "collapsed">  What are the benefits of upgrading to yougee Premium?<i class=
-              "bx bx-chevron-down icon-show"></i><i class=
-              "bx bx-chevron-up icon-close"></i></a>
-              <div id="accordion-list-4" class="collapse" data-bs-parent=
-              ".accordion-list">
-                <p>yougee doesn't stop at redefining how you connect; we take it a
-                step further with premium features. Enjoy a multitude of additional
-                search filters to refine your matches, giving you ultimate control
-                over your dating experience. You'll also have message read receipts
-                to add a touch of transparency to your interactions, and access to
-                premium history, so you can see who's been viewing your
-                profile.</p>
-              </div>
-            </li>
-
-
-          </ul>
-        </div>
-
-      </div>
-    </section><!-- End Frequently Asked Questions Section -->
-
-    
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-newsletter">
-
-      <h4>Download now! </h4>
-        
-      <!-- <h5>Contact us at 
-        <a href=mailto:"willow@yougee.com">willow@yougee.com</a> 💜</h5> -->
-        <a  class="download-btn2" onclick="redirectToAndroid()"><i class="bx bxl-play-store" ></i> Google Play</a>
-            <a  class="download-btn2" onclick="redirectToiOS()"><i class="bx bxl-apple"></i> App Store</a>
-
-          
-            
-
-      <div class="d-flex align-items-center ">
-
-            <!-- <div class="download-container"> -->
-              <div class="row">
-                <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-1 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
-            <!-- <a  class="download-btn2" onclick="redirectToAndroid()"><i class="bx bxl-play-store" ></i> Google Play</a>
-            <a  class="download-btn2" onclick="redirectToiOS()"><i class="bx bxl-apple"></i> App Store</a> -->
-
-          </div>
-
-          <style>
-            .download-container {
-              display: flex;
-              /* justify-content: center;
-              align-items: center; */
-            }
-        
-            .download-btn2 {
-              display: inline-block;
-              width: 200px;
-              height: 60px;
-              margin: 0 10px;
-              background-color: #47536e;
-              color: #fff;
-              text-align: center;
-              line-height: 60px;
-              text-decoration: none;
-              font-size: 16px;
-              border-radius: 5px;
-            }
-            .download-btn2:hover {
-    background-color: #7700cb; /* Maintain the same background color on hover */
-    color: #fff; /* Ensure text color remains white on hover */
-  }
-            .download-btn2 i {
-              margin-right: 10px;
-            }
-        
-            .android-logo {
-              color: green;
-            }
-        
-            .ios-logo {
-              color: #000;
-            }
-          </style>
-
-       
-
-              
-        <!-- </div> -->
-      </div>
-    </div>
-
-    <h5 style="margin-top: 20px;">Contact us at 
-      <a href=mailto:"willow@yougee.com">willow@yougee.com</a> 💜</h5>
-    </div>
-
-    
-
-    <!-- <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-    
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div> -->
-    <!-- <div class="footer-top">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-6 footer-links">
-          
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- <div class="container py-4">
-      <div class="copyright">
-        &copy; Copyright <strong><span>yougee</span></strong>. All Rights Reserved
-      </div>
-      <div class="social-links mt-3">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-    
-    </div> -->
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
 
 </body>
 
 </html>
+
