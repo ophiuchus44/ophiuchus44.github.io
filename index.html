@@ -38,21 +38,36 @@
       /* max-height: 500px; */
       margin-top: 10px;
     }
+    .no-bullets {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
 
-<marquee behavior="scroll" direction="left" scrollamount="5">🚀 Welcome to Paul's Digital Lab 🚀</marquee>
+<marquee behavior="scroll" direction="left" scrollamount="10">🚀 Welcome to Paul's Portfolio 🚀</marquee>
 
 <h1>Hi, I'm Paul 👋</h1>
-<p style="display: none;">Hello, curious person inspecting the element 👀</p>
-<p>These are a few projects I've built over the years — just some public examples. There's more.</p>
+<p style="display: none;">Hello there 👀</p>
+<p>These are a few projects I've built over the years — just some public examples. There's more... </p>
 
 <p>
     <a href="https://www.linkedin.com/in/paultrichon" target="_blank" style="color: cyan;">💼 LinkedIn</a> |
-    <a href="https://github.com/ophiuchus44/publicExamples" target="_blank" style="color: cyan;">💻 GitHub</a>
+    <a href="https://github.com/ophiuchus44/publicExamples" target="_blank" style="color: cyan;">💻 GitHub</a> |
     <a href="mailto:paul.trichon@gmail.com" style="color: cyan;">📧 Email</a>
   </p>
+
+  <div class="project">
+    <h3>Articles About Me</h3>
+    <ul class="no-bullets">
+      <li><a href="https://www.pittwire.pitt.edu/pittwire/features-articles/students-develop-less-judgmental-dating-app-to-focus-inr-self" target="_blank" style="color: cyan;">"Students Develop Less Judgmental Dating App to Focus on the ‘Inr’ Self"</a> - Pittwire</li>
+      <li><a href="https://www.rmusentrymedia.com/news/pitt-students-create-dating-app/" target="_blank" style="color: cyan;">"Pitt students create dating app Inrstellar"</a> - RMU Sentry Media</li>
+      <li><a href="https://pittnews.com/article/27767/archives/student-helps-at-accident/" target="_blank" style="color: cyan;">"Student helps at accident"</a> - The Pitt News</li>
+    </ul>
+</div>
+
 
 <div class="project">
   <h2>👐 Hand Warm-ups (2025)</h2>
@@ -78,7 +93,7 @@
 
 <div class="project">
     <h2>💬 YouGee – Dating App (2024)</h2>
-    <p>A dating app where users could search for things they are interested in, like hiking or cooking. Focused on intentional connection and aesthetics over gamification.</p>
+    <p>A react native dating app where users could search for things they are interested in, like hiking or cooking. Focused on intentional connection and aesthetics over gamification.</p>
     <iframe width="560" height="400"
       src="https://www.youtube.com/embed/EsYnpAHfjNM"
       frameborder="0"
@@ -90,7 +105,7 @@
 
 <div class="project">
   <h2>🎮 Gameboy Tetris – Kotlin/Compose (2023)</h2>
-  <p>Gameboy emulator UI with Tetris built using Jetpack Compose.</p>
+  <p> Android Gameboy emulator UI with Tetris built using Jetpack Compose.</p>
   <img class="gif" src="https://user-images.githubusercontent.com/17733702/217046867-97218a15-d7f9-4e5c-9ad8-0fd0d307c4d3.gif">
 </div>
 
@@ -102,16 +117,20 @@
 </div>
 
 <div class="project">
+  <h2>🧹 Game Level Complexity for A* – Kotlin/Compose (2023)</h2>
+  <p> Ported A* visualizer code to Android </p>
+  <img class="gif" src="https://user-images.githubusercontent.com/17733702/218213834-40b2a597-54b0-4f31-9baa-8c727f7bf0c8.gif">
+</div>
+
+
+
+
+<div class="project">
   <h2>🏋 Game of Thrones – UI/UX Concept (2022)</h2>
-  <p>Concept interface and interactions using Kotlin/Compose.</p>
+  <p>Android concept interface and interactions using Kotlin/Compose.</p>
   <img class="gif" src="https://user-images.githubusercontent.com/17733702/217055877-0a7788ee-87a4-41e3-acf9-ffefb9e04751.gif">
 </div>
 
-<!-- <div class="project">
-  <h2>🧹 Game Level Editor – Kotlin/Compose (2021)</h2>
-  <p>Tile-based level builder with real-time interaction.</p>
-  <img class="gif" src="https://user-images.githubusercontent.com/17733702/218213834-40b2a597-54b0-4f31-9baa-8c727f7bf0c8.gif">
-</div> -->
 
 <div class="project">
   <h2>🌍 WIKI App – Kotlin/Compose/Hilt/Ktor (2020)</h2>
@@ -132,24 +151,19 @@
   </div>
 </div>
 
-<!-- <div class="project">
-  <h2>🎛️ The Chainsmokers (2019)</h2>
-  <p>Augmented Reality perfomance for a live show, sitting in control booth with custom controller. </p>
-  <img class="gif" src="chainsmokers.jpg" alt="Retro Lab Screenshot">
-</div> -->
 
 
 
 <div class="project">
   <h2>⚡ Phone Flashing (2019)</h2>
-  <p>Work smarter not harder. This setup turned a 4 hour process into 5 minutes.</p>
+  <p>Work smarter not harder. This setup turned a 4 hour process into 5 minutes. </p>
   <img class="gif" src="phoneserver.jpeg" alt="Retro Lab Screenshot">
 </div>
 
 
 <div class="project">
     <h2>🪐 Interstellar – Dating App (2019)</h2>
-    <p>Focused on intentional connection and aesthetics over gamification.</p>
+    <p> Android/iOS native app focused on intentional connection and aesthetics over gamification. Utilizing AI for facial recognition and detection. </p>
     <iframe width="560" height="400"
       src="https://www.youtube.com/embed/YqgHC03DUnc"
       frameborder="0"
@@ -161,13 +175,13 @@
 
 <div class="project">
   <h2>📺 DirectTV Automated Testing (2017)</h2>
-  <p>Scripting and automation to simulate remote control inputs.</p>
+  <p>Scripting and automation to simulate remote control inputs. Testing how many headless clients can be supported. </p>
   <img class="gif" src="https://github.com/user-attachments/assets/68b7d41a-99c8-4e7d-a384-18a84e716cbd">
 </div>
 
 <div class="project">
   <h2>🌿 mmjprice.com (2016)</h2>
-  <p>Early-stage web app for MMJ pricing aggregation.</p>
+  <p>Early-stage web app for MMJ pricing aggregation. Made from scraping data off Weedmaps. </p>
   <img class="gif" src="https://github.com/user-attachments/assets/3fcfbb6c-b6ce-4762-ad09-20b05ca710ea">
 </div>
 
