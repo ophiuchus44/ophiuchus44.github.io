@@ -43,6 +43,30 @@
       padding: 0;
       margin: 0;
     }
+    .land-records-shots {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      max-width: 780px;
+      margin: 12px auto 0;
+      align-items: start;
+    }
+    .land-records-shots img {
+      width: 100%;
+      height: auto;
+      max-height: 180px;
+      object-fit: contain;
+      margin-top: 0;
+    }
+    @media (max-width: 640px) {
+      .land-records-shots {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+      }
+      .land-records-shots img {
+        max-height: 240px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -68,6 +92,37 @@
     </ul>
 </div>
 
+<div class="project">
+  <h2>📜 Land Records Search — Prototype (2026)</h2>
+  <p>Prototype search portal for land records: indexed instruments, PIN-level views, and document detail screens (demo data).</p>
+  <p><a href="https://demo1-omega-eight.vercel.app/" target="_blank" style="color: cyan;">Open live prototype</a></p>
+  <div class="land-records-shots">
+    <img src="land-records-search.png" alt="Record of deeds search results">
+    <img src="land-records-pin.png" alt="PIN overview and title health">
+    <img src="land-records-document.png" alt="Instrument detail with extracted fields">
+  </div>
+</div>
+
+<div class="project">
+  <h2>🤖 Bot Detector (2026)</h2>
+  <p>A Chrome extension that detects bot accounts: hover over a username to see signals without leaving the page.</p>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    <iframe width="560" height="400"
+      src="https://www.youtube.com/embed/xDpl5H9ll4E"
+      title="Bot Detector demo"
+      frameborder="0"
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <iframe width="560" height="400"
+      src="https://www.youtube.com/embed/Q02kAtU_j7M"
+      title="Bot Detector demo"
+      frameborder="0"
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
 
 <div class="project">
   <h2>👐 Hand Warm-ups (2025)</h2>
